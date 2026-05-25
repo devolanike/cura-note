@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Share2, Check, MoreVertical, Trash2, RefreshCw } from "lucide-react";
 
-const EditorToolbar = ({
+const EditorToolBar = ({
   activeNote,
   activeTab,
   onTriggerDeleteModal,
@@ -104,4 +104,4 @@ const EditorToolbar = ({
   );
 };
 
-export default EditorToolbar;
+export default EditorToolBar;
