@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import EditorToolbar from "./EditorToolbar";
+import EditorToolBar from "./EditorToolBar";
 import EditorMain from "./EditorMain";
 import DeleteModal from "./DeleteModal";
 
@@ -28,7 +28,7 @@ const EditorPane = ({
 
   return (
     <main className="flex-1 bg-white relative h-full flex flex-col overflow-hidden">
-      <EditorToolbar
+      <EditorToolBar
         activeNote={activeNote}
         activeTab={activeTab}
         onTriggerDeleteModal={() => setIsDeleteModalOpen(true)}
