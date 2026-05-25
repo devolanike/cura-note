@@ -1,9 +1,9 @@
 import React, { useState, useMemo } from "react";
-import SideBar from "../components/SideBar";
-import NoteList from "../components/NoteList";
-import EditorPane from "../components/EditorPane";
-import FloatingActionMenu from "../components/FloatingActionMenu";
-import SettingsModal from "../components/SettingsModal";
+import SideBar from "../components/dashboard/SideBar";
+import NoteList from "../components/dashboard/NoteList";
+import EditorPane from "../components/dashboard/EditorPane";
+import FloatingActionMenu from "../components/dashboard/FloatingActionMenu";
+import SettingsModal from "../components/dashboard/SettingsModal";
 
 const Dashboard = () => {
   const [notes, setNotes] = useState([
