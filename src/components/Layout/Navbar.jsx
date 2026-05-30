@@ -123,12 +123,12 @@ function Navbar() {
               >
                 Sign In
               </a>
-              <a
-                href="/dashboard"
+              <Link
+                to="/Dashboard"
                 className="w-full py-3 rounded-lg text-center text-xs font-black uppercase tracking-widest bg-zinc-950 text-[#e7e7e5]"
               >
                 Go to Workspace
-              </a>
+              </Link>
             </div>
           </motion.div>
         )}
