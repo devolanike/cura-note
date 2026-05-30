@@ -29,7 +29,6 @@ function CuraDashboard() {
             Dashboard Preview
           </h1>
         </div>
-        <ThemeToggle />
       </header>
 
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
