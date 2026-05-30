@@ -4,7 +4,6 @@ import Hero from "../components/Sections/Hero";
 import InteractiveWorkspace from "../components/Sections/InteractiveWorkspace";
 import CorePillars from "../components/Sections/CorePillars";
 import PhilosophyComparison from "../components/Sections/PhilosophyComparison";
-import Testimonials from "../components/Sections/Testimonial";
 import Footer from "../components/Sections/Footer";
 import MagicBento from "../components/Sections/MagicBento";
 import Dashboard from "@/components/Sections/DashboardPreview";
@@ -32,7 +31,6 @@ export default function LandingPage() {
         />
         <PhilosophyComparison />
         <CorePillars />
-        {/* <Testimonials /> */}
         <Footer />
       </main>
     </div>

@@ -2,6 +2,7 @@ import React from "react";
 import { motion, AnimatePresence } from "framer-motion"; // eslint-disable-line
 import { FileText, Menu, X, ChevronRight } from "lucide-react";
 import { useLanding } from "../../context/LandingContext";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const { mobileMenuOpen, setMobileMenuOpen } = useLanding();
@@ -54,13 +55,13 @@ function Navbar() {
           >
             Sign In
           </a>
-          <a
-            href="/dashboard"
+          <Link
+            to="/Dashboard"
             className="px-5 py-2.5 rounded-xl text-xs font-black uppercase tracking-widest bg-zinc-950 hover:bg-zinc-800 text-[#e7e7e5] transition-all duration-200 flex items-center gap-1.5 shadow-sm"
           >
             Go to Workspace
             <ChevronRight className="w-4 h-4" />
-          </a>
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
