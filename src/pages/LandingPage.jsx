@@ -1,33 +1,40 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Navbar from "../components/Layout/Navbar";
+import Hero from "../components/Sections/Hero";
+import InteractiveWorkspace from "../components/Sections/InteractiveWorkspace";
+import CorePillars from "../components/Sections/CorePillars";
+import PhilosophyComparison from "../components/Sections/PhilosophyComparison";
+import Testimonials from "../components/Sections/Testimonial";
+import Footer from "../components/Sections/Footer";
+import MagicBento from "../components/Sections/MagicBento";
+import Dashboard from "@/components/Sections/DashboardPreview";
 
-const LandingPage = () => {
+export default function LandingPage() {
   return (
-    <>
-      <div style={{ padding: "20px", textAlign: "center" }}>
-        <Link to="/dashboard">
-          <button
-            style={{
-              padding: "12px 24px",
-              fontSize: "16px",
-              fontWeight: "bold",
-              backgroundColor: "#0070f3",
-              color: "#fff",
-              border: "none",
-              borderRadius: "8px",
-              cursor: "pointer",
-              boxShadow: "0 4px 14px 0 rgba(0,118,255,0.39)",
-              transition: "transform 0.2s ease",
-            }}
-            onMouseOver={(e) => (e.target.style.transform = "scale(1.05)")}
-            onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
-          >
-            🚧 Dev Mode: Go to Dashboard ➔
-          </button>
-        </Link>
-      </div>
-    </>
+    <div className="bg-[#e7e7e5] min-h-screen text-zinc-950">
+      <Navbar />
+      <main>
+        <Hero />
+        <Dashboard />
+        <InteractiveWorkspace />
+        <MagicBento
+          textAutoHide={true}
+          enableStars
+          enableSpotlight
+          enableBorderGlow={true}
+          enableTilt={false}
+          enableMagnetism={false}
+          clickEffect
+          spotlightRadius={400}
+          particleCount={12}
+          glowColor="132, 0, 255"
+          disableAnimations={false}
+        />
+        <PhilosophyComparison />
+        <CorePillars />
+        {/* <Testimonials /> */}
+        <Footer />
+      </main>
+    </div>
   );
-};
-
-export default LandingPage;
+}

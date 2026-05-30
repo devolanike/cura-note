@@ -164,14 +164,14 @@ const Dashboard = () => {
           activeTab={activeTab}
           onTabChange={setActiveTab}
           onSelectNote={(id) => {
-            // Housekeeping Filter Logic: clean up blank notes upon switching away
+            // Filter Logic
             setNotes((prevNotes) => {
               return prevNotes.filter((note) => {
                 if (note.id === activeNoteId) {
                   const isTitleEmpty =
                     !note.title ||
                     note.title.trim() === "" ||
-                    note.title === "Untitled Manuscript";
+                    note.title === "Untitled Note";
                   const isContentEmpty =
                     !note.content || note.content.trim() === "";
                   if (isTitleEmpty && isContentEmpty) {
