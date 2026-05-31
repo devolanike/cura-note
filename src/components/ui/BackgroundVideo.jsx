@@ -1,8 +1,21 @@
+import { useRef, useEffect } from "react";
+
 function BackgroundVideo({ videoSrc, children }) {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.play().catch((error) => {
+        console.log("Autoplay prevented:", error);
+      });
+    }
+  }, []);
+
   return (
     <div className="relative w-full min-h-screen">
       {/* The Video Layer - Pinned to the background */}
       <video
+        ref={videoRef}
         autoPlay={true}
         loop={true}
         muted={true}
