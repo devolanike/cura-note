@@ -3,10 +3,10 @@ function BackgroundVideo({ videoSrc, children }) {
     <div className="relative w-full min-h-screen">
       {/* The Video Layer - Pinned to the background */}
       <video
-        autoPlay
-        loop
-        muted
-        playsInline
+        autoPlay={true}
+        loop={true}
+        muted={true}
+        playsInline={true}
         preload="auto"
         className="absolute inset-0 w-full h-full object-cover z-0"
       >
