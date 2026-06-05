@@ -4,6 +4,7 @@ import { Sparkle, ArrowRight } from "lucide-react";
 import BackgroundVideo from "../ui/BackgroundVideo";
 import HeroVideo from "../../assets/Videos/HeroBv.mp4";
 import TextType from "../ui/TextType";
+import { Link } from "react-router-dom";
 
 function Hero() {
   return (
@@ -78,12 +79,14 @@ function Hero() {
           transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
           className="mt-8"
         >
-          <button
-            className="px-8 py-4 bg-[#2d2a26] text-white rounded-full font-medium 
+          <Link to="/SignUp">
+            <button
+              className="px-8 py-4 bg-[#2d2a26] text-white rounded-full font-medium 
              hover:bg-black shadow-lg hover:shadow-xl active:scale-95 text-lg"
-          >
-            Start Organizing Free
-          </button>
+            >
+              Start Organizing Free
+            </button>
+          </Link>
         </motion.div>
       </section>
     </BackgroundVideo>

@@ -49,12 +49,12 @@ function Navbar() {
 
         {/* Desktop CTA */}
         <div className="hidden md:flex items-center gap-6">
-          <a
-            href="/login"
+          <Link
+            to="/Login"
             className="text-xs font-black uppercase tracking-widest text-zinc-600 hover:text-zinc-950 transition-colors"
           >
             Sign In
-          </a>
+          </Link>
           <Link
             to="/Dashboard"
             className="px-5 py-2.5 rounded-xl text-xs font-black uppercase tracking-widest bg-zinc-950 hover:bg-zinc-800 text-[#e7e7e5] transition-all duration-200 flex items-center gap-1.5 shadow-sm"
