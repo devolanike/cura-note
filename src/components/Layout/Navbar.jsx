@@ -50,13 +50,13 @@ function Navbar() {
         {/* Desktop CTA */}
         <div className="hidden md:flex items-center gap-6">
           <Link
-            to="/Login"
+            to="/SignUp"
             className="text-xs font-black uppercase tracking-widest text-zinc-600 hover:text-zinc-950 transition-colors"
           >
-            Sign In
+            Sign Up
           </Link>
           <Link
-            to="/Dashboard"
+            to="/Login"
             className="px-5 py-2.5 rounded-xl text-xs font-black uppercase tracking-widest bg-zinc-950 hover:bg-zinc-800 text-[#e7e7e5] transition-all duration-200 flex items-center gap-1.5 shadow-sm"
           >
             Go to Workspace
@@ -117,14 +117,14 @@ function Navbar() {
             </a>
             <hr className="border-zinc-300" />
             <div className="flex flex-col gap-3 pt-2">
-              <a
-                href="/login"
+              <Link
+                to="/Login"
                 className="text-sm font-bold text-zinc-600 text-center py-2 hover:text-zinc-900"
               >
                 Sign In
-              </a>
+              </Link>
               <Link
-                to="/Dashboard"
+                to="/SignUp"
                 className="w-full py-3 rounded-lg text-center text-xs font-black uppercase tracking-widest bg-zinc-950 text-[#e7e7e5]"
               >
                 Go to Workspace
